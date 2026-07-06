@@ -3,6 +3,13 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+ export async function GET() {
+  return NextResponse.json({
+    success: true,
+    message: "API is working!"
+  });
+}
+
 export async function POST(request: Request) {
   try {
     const review = await request.json();
