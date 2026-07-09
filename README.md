@@ -1,36 +1,138 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⭐ Review Monitoring Dashboard
 
-## Getting Started
+A full-stack Review Monitoring Dashboard built with **Next.js**, **Supabase**, **Resend**, and **Vercel**.
 
-First, run the development server:
+This application helps businesses monitor customer reviews, identify negative feedback, and automatically send email alerts so important reviews are never missed.
+
+---
+
+## 🚀 Features
+
+* View customer reviews in a modern dashboard
+* Search and filter reviews
+* Statistics overview
+* Automatic email alerts for negative reviews
+* Secure Supabase database
+* Row Level Security (RLS)
+* Server-side API routes
+* Responsive interface
+* Cloud deployment on Vercel
+
+---
+
+## 🛠 Tech Stack
+
+### Frontend
+
+* Next.js 16
+* React
+* TypeScript
+* Tailwind CSS
+
+### Backend
+
+* Next.js API Routes
+
+### Database
+
+* Supabase
+
+### Email Service
+
+* Resend
+
+### Deployment
+
+* Vercel
+
+---
+
+## 📂 Project Structure
+
+```
+app/
+components/
+lib/
+public/
+api/
+```
+
+---
+
+## ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/bw6252555-eng/review-manager.git
+```
+
+Install dependencies
+
+```bash
+npm install
+```
+
+Run locally
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🔑 Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create an `.env.local` file with:
 
-## Learn More
+```
+NEXT_PUBLIC_SUPABASE_URL=
+NEXT_PUBLIC_SUPABASE_ANON_KEY=
+SUPABASE_SERVICE_ROLE_KEY=
+RESEND_API_KEY=
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📧 Email Alerts
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Negative reviews are detected automatically.
 
-## Deploy on Vercel
+When a review requires attention:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* An email notification is generated.
+* The review status is updated.
+* Duplicate alerts are prevented.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## 🔒 Security
+
+* Supabase Row Level Security enabled
+* Service Role Key used only on the server
+* Environment variables stored securely
+
+---
+
+## 🚀 Deployment
+
+The application is deployed using **Vercel**.
+
+---
+
+## 📈 Future Improvements
+
+* AI-generated replies
+* Charts & analytics
+* Authentication
+* Multi-business support
+* Weekly email reports
+* Dark mode
+
+---
+
+## 👨‍💻 Author
+
+**Haider**
+
+Built as a portfolio project to demonstrate full-stack web development using modern technologies.
